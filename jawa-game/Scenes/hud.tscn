@@ -1,7 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cggsm67pmb2w7"]
+[gd_scene load_steps=13 format=3 uid="uid://cggsm67pmb2w7"]
 
+[ext_resource type="Script" uid="uid://dbjcaedsg4khp" path="res://Scenes/hud.gd" id="1_bjfho"]
 [ext_resource type="Texture2D" uid="uid://bpahwuf7c6jv8" path="res://Art Assets/Battery2_sheet.png" id="1_e0onf"]
 [ext_resource type="Texture2D" uid="uid://cdupxlndsqpha" path="res://Art Assets/Battery_sheet.png" id="2_fccik"]
+[ext_resource type="Texture2D" uid="uid://dcwfflghsfram" path="res://Art Assets/metal_scrap2.png" id="4_6fbih"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6fbih"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fccik"]
 atlas = ExtResource("1_e0onf")
@@ -85,6 +89,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bjfho")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -96,6 +101,7 @@ offset_top = 48.0
 offset_right = 109.5
 offset_bottom = 107.0
 grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_6fbih")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel"]
 position = Vector2(109, 30.999998)
@@ -105,10 +111,17 @@ animation = &"Full"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = -1.0
-offset_top = 51.0
-offset_right = 221.0
-offset_bottom = 112.0
+offset_left = 14.0
+offset_top = 52.0
+offset_right = 236.0
+offset_bottom = 113.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Scrap Total:"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Label"]
+position = Vector2(248, 30)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_6fbih")
