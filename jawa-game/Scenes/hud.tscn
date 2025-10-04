@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://cggsm67pmb2w7"]
 
-[ext_resource type="Script" uid="uid://dbjcaedsg4khp" path="res://Scenes/hud.gd" id="1_bjfho"]
+[ext_resource type="Script" uid="uid://dbjcaedsg4khp" path="res://Scripts/hud.gd" id="1_bjfho"]
 [ext_resource type="Texture2D" uid="uid://bpahwuf7c6jv8" path="res://Art Assets/Battery2_sheet.png" id="1_e0onf"]
 [ext_resource type="Texture2D" uid="uid://cdupxlndsqpha" path="res://Art Assets/Battery_sheet.png" id="2_fccik"]
 [ext_resource type="Texture2D" uid="uid://dcwfflghsfram" path="res://Art Assets/metal_scrap2.png" id="4_6fbih"]

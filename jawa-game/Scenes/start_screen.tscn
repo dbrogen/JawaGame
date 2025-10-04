@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://d1ogy0y6taw4e"]
+
+[ext_resource type="Script" uid="uid://dlueufmm0uxr" path="res://Scripts/start_screen.gd" id="1_60ddj"]
+[ext_resource type="Texture2D" uid="uid://jgw61u1pvle0" path="res://Art Assets/Title_screen2.png" id="1_i8r30"]
+[ext_resource type="Texture2D" uid="uid://cabuj1348g2qn" path="res://Art Assets/Start_button.png" id="2_ainjc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_60ddj"]
+texture = ExtResource("2_ainjc")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ainjc"]
+texture = ExtResource("2_ainjc")
+
+[node name="Start Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_60ddj")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_i8r30")
+expand_mode = 1
+
+[node name="Start Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -114.0
+offset_right = -94.0
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2, 2)
+theme_override_styles/normal = SubResource("StyleBoxTexture_60ddj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ainjc")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_60ddj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ainjc")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_60ddj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_ainjc")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_60ddj")
+theme_override_styles/focus = SubResource("StyleBoxTexture_60ddj")
+
+[node name="Credits" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 40.5
+offset_top = -95.0
+offset_right = 103.5
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Credits"
+
+[connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
