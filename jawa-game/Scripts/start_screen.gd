@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_start_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Exploration/desert_dunes.tscn");
+	get_tree().change_scene_to_file("res://Scenes/title_crawl.tscn");
 
 
 func _on_credits_pressed() -> void:
