@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cchc6i0a5paho"]
+
+[ext_resource type="Texture2D" uid="uid://dcwfflghsfram" path="res://Art Assets/metal_scrap2.png" id="1_cbmtp"]
+[ext_resource type="Script" uid="uid://cci0jim5qy46o" path="res://Scripts/scrap.gd" id="1_ktoea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbmtp"]
+size = Vector2(63, 58)
+
+[node name="Scrap" type="Node2D" groups=["Scrap"]]
+script = ExtResource("1_ktoea")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cbmtp")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="Collider" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_cbmtp")
