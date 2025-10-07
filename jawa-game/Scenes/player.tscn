@@ -1,3 +1,49 @@
-[gd_scene load_steps=0 format=3 uid="uid://revmkg12pyl3"]
+[gd_scene load_steps=8 format=3 uid="uid://revmkg12pyl3"]
 
-[node name="Player" type="Node2D"]
+[ext_resource type="Script" path="res://Scenes/player.gd" id="1_11twk"]
+[ext_resource type="Texture2D" uid="uid://wlij80qvn5qc" path="res://Art Assets/Little Bot 1.png" id="2_umjti"]
+[ext_resource type="Texture2D" uid="uid://buykrdd1u6a7b" path="res://Art Assets/Little Bot 2.png" id="3_te1ds"]
+[ext_resource type="Texture2D" uid="uid://x0hbdlgvp87" path="res://Art Assets/Little Bot 3.png" id="4_atydd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_prss5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_umjti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_te1ds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_atydd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4lx8h"]
+radius = 164.0
+height = 376.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nb08i"]
+radius = 240.008
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+collision_mask = 7
+script = ExtResource("1_11twk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_prss5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_4lx8h")
+
+[node name="collect" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collect"]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_nb08i")

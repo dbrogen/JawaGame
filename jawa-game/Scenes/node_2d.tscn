@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmd2o7c2qjjj4"]
+
+[ext_resource type="PackedScene" uid="uid://revmkg12pyl3" path="res://Scenes/player.tscn" id="1_5orjw"]
+[ext_resource type="PackedScene" uid="uid://f1o67c21tahp" path="res://Scenes/Exploration/desert_dunes.tscn" id="1_mfvw0"]
+
+[node name="test" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -332.0
+offset_top = -256.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Desert Dunes" parent="." instance=ExtResource("1_mfvw0")]
+
+[node name="Player" parent="." instance=ExtResource("1_5orjw")]

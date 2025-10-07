@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://btvwqrus2kvnk"]
+
+[ext_resource type="Script" path="res://Scenes/scarp_1.gd" id="1_og4xn"]
+[ext_resource type="Texture2D" uid="uid://butaufarry84j" path="res://Art Assets/metal_scrap1 .png" id="2_psgv4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_02fyd"]
+radius = 35.0
+
+[node name="Scarp 1" type="Area2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_og4xn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_psgv4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_02fyd")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
