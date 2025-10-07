@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl1xkew4jpagx"]
+
+[ext_resource type="Script" uid="uid://ctqfksa4qbp36" path="res://Scenes/Exploration/fancy_scrap.gd" id="1_x2bs2"]
+[ext_resource type="Texture2D" uid="uid://butaufarry84j" path="res://Art Assets/metal_scrap1 .png" id="2_x2bs2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2bs2"]
+size = Vector2(63, 58)
+
+[node name="Fancy Scrap" type="Node2D"]
+script = ExtResource("1_x2bs2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_x2bs2")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="Collider" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_x2bs2")
