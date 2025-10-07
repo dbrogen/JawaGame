@@ -63,6 +63,54 @@ position = Vector2(882, 349)
 [node name="Fancy Scrap" parent="." instance=ExtResource("4_1ppon")]
 position = Vector2(830, 533)
 
+[node name="Scrap2" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(1732, 27)
+
+[node name="Scrap10" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(-667, 275)
+
+[node name="Scrap11" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(-134, 1015)
+
+[node name="Scrap12" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(1585, 1277)
+
+[node name="Scrap13" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(450, 1277)
+
+[node name="Scrap5" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(1418, 589)
+
+[node name="Fancy Scrap2" parent="." instance=ExtResource("4_1ppon")]
+position = Vector2(77, -129)
+
+[node name="Scrap3" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(451, 805)
+
+[node name="Fancy Scrap3" parent="." instance=ExtResource("4_1ppon")]
+position = Vector2(-411, 618)
+
+[node name="Fancy Scrap5" parent="." instance=ExtResource("4_1ppon")]
+position = Vector2(-737, -397)
+
+[node name="Scrap4" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(2017, 717)
+
+[node name="Scrap6" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(-448, 1232)
+
+[node name="Scrap7" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(798, 1075)
+
+[node name="Scrap8" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(591, -395)
+
+[node name="Scrap9" parent="." instance=ExtResource("3_v6ot0")]
+position = Vector2(1588, -321)
+
+[node name="Fancy Scrap4" parent="." instance=ExtResource("4_1ppon")]
+position = Vector2(1697, 961)
+
 [node name="Player" parent="." instance=ExtResource("6_6gs27")]
 position = Vector2(592, 319)
 scale = Vector2(0.25, 0.25)
