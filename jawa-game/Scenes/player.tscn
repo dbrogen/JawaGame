@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://revmkg12pyl3"]
 
-[ext_resource type="Script" path="res://Scenes/player.gd" id="1_11twk"]
+[ext_resource type="Script" uid="uid://cu0aisi31yjim" path="res://Scenes/player.gd" id="1_11twk"]
 [ext_resource type="Texture2D" uid="uid://wlij80qvn5qc" path="res://Art Assets/Little Bot 1.png" id="2_umjti"]
 [ext_resource type="Texture2D" uid="uid://buykrdd1u6a7b" path="res://Art Assets/Little Bot 2.png" id="3_te1ds"]
 [ext_resource type="Texture2D" uid="uid://x0hbdlgvp87" path="res://Art Assets/Little Bot 3.png" id="4_atydd"]
@@ -29,7 +29,7 @@ height = 376.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_nb08i"]
 radius = 240.008
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 scale = Vector2(0.5, 0.5)
 collision_mask = 7
 script = ExtResource("1_11twk")

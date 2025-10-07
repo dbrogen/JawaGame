@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cl1xkew4jpagx" path="res://Scenes/Exploration/fancy_scrap.tscn" id="4_1ppon"]
 [ext_resource type="PackedScene" uid="uid://l5tp0kgj5kpi" path="res://Scenes/Exploration/spaceship.tscn" id="5_0vbdv"]
 [ext_resource type="PackedScene" uid="uid://revmkg12pyl3" path="res://Scenes/player.tscn" id="6_6gs27"]
-[ext_resource type="PackedScene" path="res://Scenes/Exploration/charging_station.tscn" id="8_cr47w"]
+[ext_resource type="PackedScene" uid="uid://det87f5v18u5w" path="res://Scenes/Exploration/charging_station.tscn" id="8_cr47w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gtw8v"]
 texture = ExtResource("1_gtw8v")
