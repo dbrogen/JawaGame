@@ -9,6 +9,6 @@ func _physics_process(delta):
 	
 	velocity=direction*speed
 	move_and_slide()
-	$AnimatedSprite2D.play()
+	$AnimatedSprite2D.play("default")
 	
 	

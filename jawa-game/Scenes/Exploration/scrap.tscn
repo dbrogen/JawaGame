@@ -17,3 +17,6 @@ texture = ExtResource("1_cbmtp")
 [node name="Collider" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_cbmtp")
+
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="area_exited" from="Hitbox" to="." method="_on_hitbox_area_exited"]

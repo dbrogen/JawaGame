@@ -87,17 +87,10 @@ animations = [{
 texture = ExtResource("4_t1xeu")
 expand_margin_right = 75.0
 
-[node name="HUD" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_bjfho")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -115,7 +108,6 @@ sprite_frames = SubResource("SpriteFrames_8jye8")
 animation = &"Full"
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 1
 offset_right = 229.0
 offset_bottom = 72.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_36asn")
