@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://l5tp0kgj5kpi"]
+
+[ext_resource type="Texture2D" uid="uid://cpvvvm4t3flfs" path="res://Art Assets/Little space ship dude.png" id="1_jyj7a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_04sjb"]
+size = Vector2(642, 651)
+
+[node name="Spaceship" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jyj7a")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="Collider" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-1, -0.5)
+shape = SubResource("RectangleShape2D_04sjb")

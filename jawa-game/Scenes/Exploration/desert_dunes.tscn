@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://f1o67c21tahp"]
+[gd_scene load_steps=8 format=4 uid="uid://f1o67c21tahp"]
 
 [ext_resource type="Texture2D" uid="uid://dh26q5w7mrysb" path="res://Art Assets/Tilemaps/Sand_tiles2.png" id="1_gtw8v"]
 [ext_resource type="PackedScene" uid="uid://cggsm67pmb2w7" path="res://Scenes/hud.tscn" id="2_ryqqg"]
 [ext_resource type="PackedScene" uid="uid://cchc6i0a5paho" path="res://Scenes/Exploration/scrap.tscn" id="3_v6ot0"]
 [ext_resource type="PackedScene" uid="uid://cl1xkew4jpagx" path="res://Scenes/Exploration/fancy_scrap.tscn" id="4_1ppon"]
+[ext_resource type="PackedScene" uid="uid://l5tp0kgj5kpi" path="res://Scenes/Exploration/spaceship.tscn" id="5_0vbdv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gtw8v"]
 texture = ExtResource("1_gtw8v")
@@ -57,5 +58,9 @@ position = Vector2(882, 349)
 
 [node name="Fancy Scrap" parent="." instance=ExtResource("4_1ppon")]
 position = Vector2(830, 533)
+
+[node name="Spaceship" parent="." instance=ExtResource("5_0vbdv")]
+position = Vector2(81, 491)
+scale = Vector2(0.25, 0.25)
 
 [editable path="HUD"]
